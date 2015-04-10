@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <title>navigating_a_new_world</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Navigating a New World</h1>
+  <h2>An Exploration of Git and GitHub</h2>
+  <h4>April 10, 2015</h4>
+
+  <section> Version Control
+    <p>
+      When I first began learning about coding, I really didn't know much, but one thing that kept coming up was version control. Before entering Phase 0 of Dev Bootcamp, I talked to one of my friends Brandon Teng, who inspired me to delve into programming, and the first thing I had to learn was version control. He showed me the beginnings of it but it didn't really come together until Week 1 of Phase 0 of Dev Bootcamp. 
+    </p>
+    <p>
+      Version control is a way to control changes to the code historically. Every time you commit a change to your project, the previous version and the most current version are both saved. If you messed up in one part of the code, you can scrap it entirely and start from a point where you know everything was working properly. 
+    </p>
+    <p>
+      There are two systems that work in conjunction with one another to create version control. On one hand, there is git, which lives inside of your Terminal inside of your actual computer. Git allows you to make modifications, additions, deletions, all within your own computer. GitHub, on the other hand, lives in the virtual world of the Internet. It is an online place where different people can upload code, share code, and collaborate on code. 
+    </p>  
+    <p>
+      Git and GitHub are different and you have to allow them to talk. If you do something in git, it will not magically appear on GitHub. You have to tell your computer to push it to the online hub. 
+    </p>
+    </section>
+
+    <section> Git 
+    <p>
+      When you are using git, it tracks changes that are made to files within your repository. A repository is essentially a place that holds your files. Start off by making a branch using "git checkout -b [branch-name]". We are going to make a splinter from our main trunk which will then be added back in later. Whenever you make a modification to an existing file, delete a file, or add a new file, git tracks all of these changes. There are three evolutions for a file using git: base, stage, commit. 
+    </p>
+    <p>
+      A file begins as being modified from an existing file, or it begins as a new file (aka untracked file). In order to move from this base step to the stage step, you must add it to the stage using "git add ." At the staging area, you can do one of two things: commit the changes or discard the changes. If everything looks good, you can commit the file using "git commit -m" or "git commit -v". Using -m gives you the option of placing a short message afterwards. Using -v brings up an editor that you can use to make an email-like message for others to see; it will include a heading and a body. 
+    </p>
+    <p>
+      If you don't want to commit the changes and you want to go back, there are two methods of doing this. If the file was modified from an existing file, you can use "git checkout [file]" which will discard the changes that you have made to the directory. If the file was previous untracked (a new file), you can get rid of it using git reset --soft HEAD [file] which will take the file that was about to be tracked and make it untracked once more. 
+    </p>
+    <p>
+      Once you have done that, merge our splinter with our main truck using "git merge master" and then we are going to push our changes to GitHub using "git push origin [branch-name]" which will push your changes from your remote git to the online GitHub. 
+    </p>
+  </section>
+  <section> The Benefits of GitHub
+    <p>
+      GitHub is the way people use open-source code. Essentially, using open source allows people to use other people's code to learn and branch off. GitHub allows people from different parts of the world to collaborate on a project by doing changes remotely and pushing these changes to GitHub, where every version becomes saved. This allows people to work together in ways that weren't possible before. While there are still some bugs when there are a vast number of different forks, the resource itself it instrumental in making big projects come together. Being able to work together and make our imaginations become realities is the epitome of coding. Coding is continuously evolving and changing, line by line making progress towards our dreams.  
+    </p>
+  </section>
+</main>
