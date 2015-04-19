@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+  <title> Building Houses </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../default.css">
+  <link rel="stylesheet" type="text/css" href="../blog/blog-stylesheet.css">
+</head>
+<body>
+  <div class="navigation"> 
+    <a href="#"> About Me </a>
+  </div>
+  <div class="navigation"> 
+    <a href="#"> Resume </a>
+  </div>
+  <div class="navigation"> 
+    <a href="#"> Projects </a>
+  </div>
+  <div class="navigation"> 
+    <a href="./blog/t1-git-blog">My Blog</a>
+  </div>
+  <div class="navigation"> 
+    <a href="#"> Connect </a>
+  </div>
+</body>
+<main>
+  <h1 class="header"> Building Houses </h1>
+  <h2 class="header"> A Look Into Margins, Borders, and Padding </h2>
+  <h4 class="header"> April 29, 2015 </h4>
+
+  <section>
+    <p>
+      This week, I learned a lot about how HTML and CSS work in conjunction with one another to create a website. Essentially, HTML creates the backbone of the website, such as a the Header, Body, Footer, as well as the content inside. CSS tackles the styling of the backbone, giving the fonts a certain style, the background a color you like, etc. While trying to put together this website, one of the important concepts that helped me put a lot of the different elements together were Margins, Borders, and Padding--a useful concept to remember when using CSS. 
+    </p>
+    <h3> The Idea </h3>
+    <p>
+      <img src="http://www.w3schools.com/css/box-model.gif"/>
+      This represents the Box Model of CSS, an important idea when making your elements work together. I like to imagine this model as a house you'd see in the suburbs. </p>
+    <p>
+      The Content, or the text and images you put in, make up the structure of the house. Sometimes the house is big, sometimes small, all houses are different! </p>
+    <p>
+      The Padding is similar to the Lawn surrounding the house, but this is a special type of grass--it's invisible when you put it on the web! </p>
+    <p>
+      The Border is just like the Fence that people place around their homes. It can be a white picket fence, a solid red brick wall, essentially anything that encapsulates your home and lawn. 
+    </p>
+    <p>
+      Finally, the Margin is how your home interacts with the rest of the web-page, also known as the neighborhood. Is your home in a grid? That means your home would be within a well-defined area. Is your home in a cul-de-sac? That means that your margins would be working around a circle. Is your home next to an alleyway? All of these conditions affect the placement of your home. 
+    </p>
+    <h3> Usage Conventions </h3>
+    <p>
+      In order to create the type of house we want to build, we use different conventions. There are three different units we can use--px, em, and sometimes %. 1 px is 1 pixel on the screen, 1 em is a unit relative to the font-size, and the % is a percentage of the whole. For learning purposes, I'll be using px for my demonstrations.</p>
+    <p>
+      For the Content/Home, we can define its width and height, as if it were a box. This can be done in CSS as shown below:
+      <ul>
+        <li>width:10px; </li>
+        <li>height:20px; </li>
+      </ul>
+    </p>
+    <p>
+      For the Padding/Lawn, there are a few different conventions of how we want to build our lawn. We can individually set each dimension with padding-top, padding-right, padding-bottom, padding-left, or we can use just padding. Let's say we wanted to build a lawn with 15px on the Top, 5px on the Right, 15px on the bottom, and 5px on the left. This can be done with the follow CSS:
+      <ul>
+        <li> padding-top:15px; </li>
+        <li> padding-right:5px; </li>
+        <li> padding-bottom:15px; </li>
+        <li> padding-left:5px; </li>
+      </ul>
+      This would be defining each element. However, if we wanted to save some space and time, we could alternatively write it like this:
+      <ul>
+        <li> padding: 15px 5px; </li>
+      </ul>
+      This naming convention creates the Lawn specifically in the order Top, Right, Bottom, Left and would assign 15px to Top/Bottom and 5px to Right/Left. If we wanted to make a pure box Lawn around our Home, we could just use:
+      <ul>
+        <li> padding: 10px; </li>
+      </ul>
+      which would assign 10px to each of our dimensions of the Lawn.
+    </p>
+    <p>
+      The Border/Fence also has certain characteristics we can add to it. It can be a thin fence, a medium fence, or a thick fence. It could be white, like our white picket fence, or it could even be red, like the brick wall. There are also a number of different styles, such as dotted or solid. If we wanted to create a thin white picket fence, we could use a convention such as:
+      <ul>
+        <li> border: 1px dashed white; </li>
+      </ul>
+      This would create a thin border dashed like picket and white in color. However, if we wanted to make our brick wall, we could also do that. 
+      <ul>
+        <li> border: 5px solid red; </li>
+      </ul>
+      This would make a really thick solid red wall around our house. If we wanted to specify our top border differently than the rest of the border, we could also do that using the same naming convensions that we learned in Padding/Lawn.
+    </p>
+    <p> 
+      Lastly, we come to Margin, the relation to the neighborhood in the web-page. The naming convention for this is very similar to padding, except that it would be margin-top, margin-right,etc. One thing to note is that the margin can be fluid in the sense that it has the ability to auto-collapse. A padding will always be part of the entity of the house. If we have two houses each with 10px of padding, the distance between the two houses would be 20px because you'd have to travel from your home, 10px across your lawn and 10px across your neighbor's lawn in order to get to their house. However, if we take out the Lawn and instead put in 10px of Margin, the Margins of adjacent items will overlap. In this sense, the two houses will only be 10px apart because they have the potential to overlap. 
+    </p>
+    <p> Thanks for reading! </p>
+  </section>
+</main>

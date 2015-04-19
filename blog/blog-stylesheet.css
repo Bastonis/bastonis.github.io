@@ -13,3 +13,10 @@ h3 {
 #next {
 	text-align:center;
 }
+img {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	display: block;
+	padding:5px;
+}
