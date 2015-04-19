@@ -1,13 +1,15 @@
 .header {
 	text-align:center;
 }
-h1 span {
-	font-size:120%;
-}
+
 section {
-	margin-left:5%;
-	margin-right:5%;
+	margin-left:15%;
+	margin-right:15%;
 }
 h3 {
+	text-align:center;
+}
+
+#next {
 	text-align:center;
 }
