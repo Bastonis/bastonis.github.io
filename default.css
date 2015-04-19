@@ -16,7 +16,7 @@ img {
 	width:50%;
 }
 .navigation {
-	border: 2px solid white;
+	border: 2px solid #D7CDCA;
 	padding:20px 80px;
 	margin: 20px 0px;
 	margin-left:1em;
@@ -47,7 +47,7 @@ a:link {
 	text-decoration: none;
 }
 a:visited{
-	color:purple;
+	color:#5582D7;
 }
 a:hover{
 	font-weight: bold;
