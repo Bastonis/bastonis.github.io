@@ -35,7 +35,7 @@
       Let's imagine that we have in front of us the Ruby Jazz Orchestra, a big band where every performer is a Rubyist jazz player. We have our 4 trumpets and 4 trombones that make up our brass section, our 5 saxophones making up our woodwind section, and our rhythm section--comprised of our bass, drums, and guitar. If we wanted to see what each instrument is classified under, we could make a hash demonstrating this
     </p>
     <p>
-      <code> instrumenttype = {
+      <code> instrument_type = {
       "trumpet" => "brass",
       "trombone" => "brass",
       "saxophone" => "woodwind",
@@ -47,16 +47,16 @@
     <p>
       No Key (on the left of the ruby rocket => ) can be identical, as it has its own identity. However, the values that make up the key can overlap, which is shown on the right of the Ruby Rocket. If we wanted to ask what type of instrument is a trumpet, we could do
     </p>
-      <p><code> puts instrumenttype["trumpet"]</code><p>
+      <p><code> puts instrument_type["trumpet"]</code><p>
       <p><code> Output: "brass" </code></p>
     <p> 
     While we are all part of the orchestra, we all have different roles to play. For example, let's take at the four people in our trumpet section: Jordan, Tim, Phil, and Gina. They are assigned different chairs, which designates different music to play. Although they are all trumpets, they all play different parts. In this way, we have a Trumpet 1, a Trumpet 2, a Trumpet 3, and a Trumpet 4. In this case, we can make an array of our trumpets.  
     </p>
-    <p><code> trumpetsection=["Jordan", "Tim", "Phil", "Gina"] </code></p>
+    <p><code> trumpet_section=["Jordan", "Tim", "Phil", "Gina"] </code></p>
     <p>
     What this tells us is the order that each of them are sitting. However, remember that arrays are built with the very first thing on the list is designated an index of 0, or zeroth. Although Jordan is first chair, in our array, he is in position zero. So let's use Ruby to find out the different positions.
     </p>
-    <p><code> puts trumpetsection[1]</code></p>
+    <p><code> puts trumpet_section[1]</code></p>
     <p><code>Output: "Tim"</code></p>
     <p>
     There are different ways to organize our data structures, and it depends on how you want to sort through the information. If you prefer having a list with a distinct order, array is the pick for you. Hash is a little bit more versatile when the ordered number rigidness comes into play, but that also means that multiple keys have to be defined. Depending on how you want to organize and find information, utilize what will suit your needs best!
