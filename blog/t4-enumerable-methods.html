@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <title>Mapping Elements</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../default.css">
+  <link rel="stylesheet" type="text/css" href="../blog/blog-stylesheet.css">
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="../../index">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="../blog/blog-home">My Blog</a></li>
+    <li><a href="#">Connect</a></li>
+  </ul>
+</nav>
+</nav>
+<main>
+  <h1 class="header">Mapping Elements</h1>
+  <h2 class="header"><!--Subtitle--></h2>
+  <h4 class="header">May 3, 2015</h4>
+
+  <section>
+    <p>
+      Today we are going to be looking at the Ruby Enumerable method Enumerable#map. On a formal outlook, the map method takes an enumerable object and runs the given block for every element. If you understand what this means, that's awesome, but for me, when I first started out, this can be confusing. To help me conceptualize what was going on, I began to think of every enumerable object as a "world" that I can control. However, I am not an excellent cartographer and what I do to one element, I must do to all. What happens to one element, happens to the next, which happens until all of the elements have been affected. In a nutshell, this is what map does, but let's look at some examples to further out understanding. 
+    </p>
+    <p>
+      For the purpose of this exercise, my enumerable object will be an Array called world. This world is unique in that it consists of three numbers: 2, 4, 6. Let's see what happens when I use map to square every element. 
+    </p>
+    <pre>
+      <code>
+      >>world=[2,4,6]
+      >>world.map{|n|n*n}
+      => [4,16,36]
+      >>p world
+      => [2,4,6]
+      </code></pre>
+    <p>
+      What's happening here is that for every element, which is 2, 4, and 6, I am having it go through my machine of n*n, where n is the variable for every element. This results in 2*2,4*4, and 6*6, ultimately returning us a new array of [4,16,36]. However, this hasn't changed our original array which we found out through the command p world, which gave us back our original array. What happens when we don't give a block for every element to go through? It will return an enumerator. Let's check this out. 
+    </p>
+    <pre>
+      <code>
+      >>world=[2,4,6]
+      >>world.map("hi")
+      => ["hi","hi","hi"]
+      >>p world
+      => [2,4,6]
+      </code></pre>
+    <p>
+      From we see here, we didn't give a block and instead gave it an argument of "hi". What map does is it takes "hi" and puts it on every element within itself. This results in our array of three "hi"s. However, as we see from the last two lines, this hasn't changed our world yet. It has shown us a modification but it hasn't permanently changed anything. If we wanted to change our original array permanently, we'd have to use the exclamation point ! because it will overwrite the existing array and modify it forever. 
+    </p>
+    <pre>
+       <code>
+      >>world=[2,4,6]
+      >>world.map!{|n|n*n}
+      =>[4,16,36]
+      >>p world
+      =>[4,16,36] 
+      </code></pre>
+    <p>
+      What we learn here is that by adding ! we have forever changed world. When we call it again in the second to last line, it is no longer an array of 2,4,6--it's now an array of 4,16,36. This is how map can be used to manipulate the different elements within an enumerable object. It is very useful when applying this method to an array or a range. Hope this has been helpful! 
+    </p>
+  </section>
+</main>
