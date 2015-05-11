@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../default.css">
+  <link rel="stylesheet" type="text/css" href="../blog/blog-stylesheet.css">
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="../../index">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="../blog/blog-home">My Blog</a></li>
+    <li><a href="#">Connect</a></li>
+  </ul>
+</nav>
+</nav>
+<main>
+  <h1 class="header">The Fire Department's New Pager</h1>
+  <h2 class="header">A Look into Ruby Classes</h2>
+  <h4 class="header">May 10, 2015</h4>
+
+  <section>
+    <p>
+      In third grade, I had a friend who loved firetrucks, and naturally, that became one of our activities. He would get toy firetrucks and we would simulate emergencies around the playground that we would have to go fix. From burning buildings to crushed cars, we saved everything on the playground.
+    </p>
+    <p>
+      Remembering this experience really helped me visualize how Ruby classes work, as I began to think of this new framework. Classes are essentially blueprint for an object, which helps give an object a framework for what it can do and what it knows. We create classes to encapsulate what we want instances of our object to know and to do. In the case of a Fire Department, I decided to create a class called Pager. Whenever an emergency calls, this Pager will let the firemen know the situation. Let's name this class! 
+    </p>
+    <pre>
+      <code> 
+        class Pager
+        end
+      </code>
+    </pre>
+    <p>
+      What we did here was create our new class called Pager, and for everything we open, we must also close. Now, let's initialize this pager and give it something to do! We want our pager to begin by asking where's the emergency to get an address for our firemen to go to. 
+    </p>
+    <pre>
+      <code>
+        class Pager
+          def initialize
+            p "Hello! This is the Fire Department. Where's your emergency?"
+            @address=gets.chomp
+          end
+        end
+      </code>
+    </pre>
+    <p>  
+      What we've done now is set up our pager. Every time it runs, it'll ask us where the emergency is located. The program then gives you a place to enter the address, which will then be assigned to the @address variable. @address is an instance variable, which can be used by any method in our class Pager. Instance variables differ from local variables in that local variables are only available inside of the method. Our pager can also do a lot more! Instance methods, similar to instance variables, are methods that can be used by all instances of our class. Let's have our Pager ask how many people are hurt and how many ambulances to send in addition to our main firetruck! 
+    </p>
+    <pre>
+      <code>
+        class Pager
+          def initialize 
+            p "Hello! This is the Chicago Fire Department. Where's the emergency?"
+            @address=gets.chomp
+          end
+  
+          def status
+            p "How many people are hurt?" 
+            @hurt_people=gets.chomp.to_i
+            p "Roger that! We'll send #{@hurt_people} ambulance(s) in addition to our main firetruck to #{@address}!"
+          end 
+        end
+      </code>
+    </pre>
+    <p>
+      Now what we've done is ask the person calling how many people are hurt. It creates a new instance variable called @hurt_people. Our ambulances only have the capacity to carry one person at a time. Once the caller puts in the number of people hurt, our Pager will send that number of ambulance(s) and the main firetruck. 
+    </p>
+    <p>
+      Now that we have the framework for our Pager set up, we're going to run the code and call it! We first need to create a new instance of the Pager class and assign that instance to a variable. Then, we will call the status method on the new variable. 
+    </p>
+    <pre>
+      <code>
+        first_call = Pager.new
+        first_call.status
+      </code>
+    </pre>
+    <p>
+      This is going to first initialize the new Pager for first_call and then run the status method! Though rudimentary in skill, this Pager will be able to tackle many cases! Classes are a great way to frame how we want our object to act by giving it different things it knows and different things it can do! Go forth and enjoy!
+    </p>
+  </section>
+  <div id="page_nav">
+    <a href="../blog/c4-tech-issues">Previous</a>
+    <a href="../blog/c5-feedback">Next</a>
+  </div>
+</main>
+
