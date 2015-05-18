@@ -46,14 +46,14 @@ main{
 	margin-left:15%;
 	margin-top:10px;
 }
-#intro {
+.intro {
 	display:inline-block;
 	width:40%;
 	float:right;
 	padding:10px;
 	margin:20px;
 	margin-right:15%;
-
+	font-family: 'Merriweather', serif;
 }
 
 footer {
@@ -67,3 +67,4 @@ a:link {
 a:visited{
 	color:#C5C8EA;
 }
+
