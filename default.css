@@ -1,19 +1,27 @@
+* {
+	font-family: 'Istok Web', sans-serif;
+}
 html {
 	background-color: #292C36;
 	color: #D3D0CF;
-	font-family: SANS-SERIF;
 }
-
+#my-name {
+	text-align:center;
+	font-size: 3em;
+	height:50%;
+	padding:5% 10% 2% 10%;
+}
 .navbar {
-	border: 2px solid #D7CDCA;
 	padding:5px 10px;
 	margin: 30px;
+
 }
 .navbar ul {
 	padding:1px;
 	margin:5px;
 	font-size:1.75em;
 	text-align: center;
+
 }
 .navbar ul li{
 	list-style:none;
