@@ -1,7 +1,7 @@
 .header {
 	text-align:center;
 }
-
+ 
 section {
 	margin-left:15%;
 	margin-right:15%;
@@ -28,5 +28,8 @@ pre {
 	white-space: pre-wrap;
 	margin:1em;
 	display:block;
-
+}
+main {
+	font-family: 'Merriweather', serif;
+	font-size: 0.85em;
 }
