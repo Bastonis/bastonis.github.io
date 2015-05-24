@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <title>Bastonis | Javascript </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../default.css">
+  <link rel="stylesheet" type="text/css" href="../blog/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather|Kaushan+Script' rel='stylesheet' type='text/css'>
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="../../index">Home</a></li>
+    <li><a href="../../about-me">About Me</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="../blog/blog-home">My Blog</a></li>
+    <li><a href="#">Connect</a></li>
+  </ul>
+</nav>
+</nav>
+<main>
+  <h1 class="header">Ruby vs JavaScript</h1>
+  <h2 class="header"><!--Subtitle--></h2>
+  <h4 class="header">May 24, 2015</h4>
+
+  <section>
+    <p>
+      This week we've made the big transition from Ruby into JavaScript and although there have definitely been growing pains in learning JavaScript coming from a Ruby background, I'm understanding why many people are using JavaScript. While JavaScript does have their own <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript">guide</a> for the different ways to use JavaScript, it's not as easy to use as the <a href="http://ruby-doc.org/core-2.2.2/">Ruby Docs</a>. However, they both have their merits in explaining how things work in their respective languages.
+    </p>
+    <p>
+      One of the interesting things that I saw in JavaScript was the creation of Objects, which closely mirrors the style of a Ruby Hash. Both of these are dictionary-like data systems that can have nested data as well. Let's take a look at the syntax for a Ruby Hash and a JavaScript Object. While Hashes have three different styles of writing a hash for the keys and values, including key => value, :key => value, and key: value, JavaScript only uses the colon to create the collection of properties.  Ruby and JS examples are below
+    </p>
+    <pre>
+      <code>
+        demographics = {
+          name: "Ryan",
+          age: 22
+        }
+        p demographics[:name]
+      </code>
+      <code>
+        var demographics = {
+          name: "Ryan",
+          age: 22
+        };
+        console.log(demographics.name)
+      </code>
+    </pre>
+    <p>
+      Both of these will produce my name when called, but syntatically, they are a little bit different. Ruby's Hash allows you to manipulate the different keys and values throughout the Hash in order to get the different data sets and manipulation that you want. JS tackles these ideas in a different manner by manipulating and calling different properties that were assigned to it. JS does not restrict access to the different properties of the object and this makes them more fluid. Ruby, on the other hand, has some encapsulation that protects these variables, meaning that it's not simple when trying to access internal instance variables compared to the JS style. 
+    </p>
+    <p>
+      Naming conventions are different because they are showing different concepts, which is why a Ruby "object" is not the same as a JS Object. If you can pin point and tackle how to use these different styles in the correct manner, it becomes a little easier to manipulate.
+    </p>
+  </section>
+  <div id="page_nav">
+    <a href="../blog/c6-stereotype-threat">Previous</a>
+    <a href="../blog/c7-values">Next</a>
+  </div>
+</main>
+
