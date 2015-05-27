@@ -61,8 +61,9 @@ footer {
 	text-align: center;
 	border:2px solid #FFFFFF;
 }
-a:link {
+a {
 	text-decoration: none;
+	color:white;
 }
 a:visited{
 	color:#C5C8EA;
