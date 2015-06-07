@@ -69,3 +69,9 @@ a:visited{
 	color:#C5C8EA;
 }
 
+.social-media {
+	margin-left:auto;
+	margin-right:auto;
+	display:inline-block;
+}
+
