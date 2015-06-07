@@ -56,11 +56,6 @@ main{
 	font-family: 'Merriweather', serif;
 }
 
-footer {
-	clear:both;
-	text-align: center;
-	border:2px solid #FFFFFF;
-}
 a {
 	text-decoration: none;
 	color:white;
@@ -71,6 +66,11 @@ a:visited{
 
 #social-media {
 	text-align:center;
-	padding:20px;
+	padding:40px 10px;
+	clear:both;
+}
+
+#social-media a {
+	padding:8px;
 }
 
