@@ -70,9 +70,8 @@ a:visited{
 }
 
 .social-media {
-	margin-left:auto;
-	margin-right:auto;
 	text-align:center;
+	padding:20px;
 	display:inline-block;
 }
 
