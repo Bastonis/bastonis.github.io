@@ -43,3 +43,12 @@ main {
 	text-align:center;
 	padding:15px;
 }
+#social-media {
+	text-align:center;
+	padding:40px 10px;
+	clear:both;
+}
+
+#social-media a {
+	padding:8px;
+}
